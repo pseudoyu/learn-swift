@@ -13,6 +13,8 @@
 		DDF75DB22A1AACBF0042DECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF75DB12A1AACBF0042DECB /* Preview Assets.xcassets */; };
 		DDF75DB92A1CB8510042DECB /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DB82A1CB8510042DECB /* Food.swift */; };
 		DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */; };
+		DDF75DBD2A1CF8640042DECB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBC2A1CF8640042DECB /* Extensions.swift */; };
+		DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		DDF75DB12A1AACBF0042DECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDF75DB82A1CB8510042DECB /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
+		DDF75DBC2A1CF8640042DECB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		DDF75DA92A1AACBE0042DECB /* FoodPicker */ = {
 			isa = PBXGroup;
 			children = (
+				DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */,
 				DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */,
 				DDF75DAA2A1AACBE0042DECB /* FoodPickerApp.swift */,
 				DDF75DAC2A1AACBE0042DECB /* ContentView.swift */,
 				DDF75DAE2A1AACBF0042DECB /* Assets.xcassets */,
 				DDF75DB02A1AACBF0042DECB /* Preview Content */,
 				DDF75DB82A1CB8510042DECB /* Food.swift */,
+				DDF75DBC2A1CF8640042DECB /* Extensions.swift */,
 			);
 			path = FoodPicker;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */,
+				DDF75DBD2A1CF8640042DECB /* Extensions.swift in Sources */,
 				DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */,
 				DDF75DAD2A1AACBE0042DECB /* ContentView.swift in Sources */,
 				DDF75DAB2A1AACBE0042DECB /* FoodPickerApp.swift in Sources */,

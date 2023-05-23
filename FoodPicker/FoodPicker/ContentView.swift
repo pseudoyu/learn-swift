@@ -7,27 +7,6 @@
 
 import SwiftUI
 
-extension View {
-    func mainButtonStyle() -> some View{
-        buttonStyle(.borderedProminent)
-            .buttonBorderShape(.capsule)
-            .controlSize(.large)
-    }
-}
-
-extension Animation {
-    static let mySpring = Animation.spring(dampingFraction: 0.55)
-    static let myEase = Animation.easeInOut(duration: 0.6)
-}
-
-extension Color {
-    static let bg2 = Color(.secondarySystemBackground)
-}
-
-extension AnyTransition {
-    static let delayInsertionOpacity = AnyTransition.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.5).delay(0.2)), removal: .opacity.animation(.easeInOut(duration: 0.4)))
-}
-
 struct ContentView: View {
     
     @State private var selectedFood: Food?
@@ -58,7 +37,7 @@ struct ContentView: View {
             .mainButtonStyle()
             .animation(.mySpring, value: shouldShowInfo)
             .animation(.myEase, value: selectedFood)
-        }.background(Color.bg2)
+        }.background(.bg2)
     }
 }
 
@@ -109,16 +88,16 @@ private extension ContentView {
                                 Divider().gridCellUnsizedAxes(.horizontal).padding(.horizontal, -10)
                                 
                                 GridRow {
-                                    Text(selectedFood!.protein.formatted())
-                                    Text(selectedFood!.fat.formatted())
-                                    Text(selectedFood!.carb.formatted())
+                                    Text(selectedFood!.$protein)
+                                    Text(selectedFood!.$fat)
+                                    Text(selectedFood!.$carb)
                                 }
                             }
                             .font(.title3)
                             .padding(.horizontal)
                             .padding()
-                            .background(RoundedRectangle(cornerRadius: 8).foregroundColor(Color(.systemBackground)))
-                            .transition(.move(edge: .top).combined(with: .opacity))
+                            .roundedRectBackgroud()
+                            .transition(.moveUpWithOpacity)
                         }
                     }
                     .clipped()
@@ -144,19 +123,18 @@ private extension ContentView {
         .buttonStyle(BorderedButtonStyle())
         .buttonBorderShape(.capsule)
     }
-    
+
     @ViewBuilder var selectedFoodInfoView: some View {
         if selectedFood != .none {
             
             foodNameView
             
-            Text("热量 \(selectedFood!.calorie.formatted()) 大卡")
+            Text("热量 \(selectedFood!.$calorie)")
         
             foodDetailView
         }
     }
 }
-
 
 extension ContentView {
     init(selectedFood: Food) {
