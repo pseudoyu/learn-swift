@@ -16,6 +16,7 @@
 		DDF75DBD2A1CF8640042DECB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBC2A1CF8640042DECB /* Extensions.swift */; };
 		DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */; };
 		DDF75DC12A1D112A0042DECB /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DC02A1D112A0042DECB /* FoodListView.swift */; };
+		DDF75DC32A1D3A350042DECB /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DC22A1D3A350042DECB /* FoodForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DDF75DBC2A1CF8640042DECB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
 		DDF75DC02A1D112A0042DECB /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		DDF75DC22A1D3A350042DECB /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				DDF75DB82A1CB8510042DECB /* Food.swift */,
 				DDF75DBC2A1CF8640042DECB /* Extensions.swift */,
 				DDF75DC02A1D112A0042DECB /* FoodListView.swift */,
+				DDF75DC22A1D3A350042DECB /* FoodForm.swift */,
 			);
 			path = FoodPicker;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				DDF75DC12A1D112A0042DECB /* FoodListView.swift in Sources */,
 				DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */,
 				DDF75DAD2A1AACBE0042DECB /* ContentView.swift in Sources */,
+				DDF75DC32A1D3A350042DECB /* FoodForm.swift in Sources */,
 				DDF75DAB2A1AACBE0042DECB /* FoodPickerApp.swift in Sources */,
 				DDF75DB92A1CB8510042DECB /* Food.swift in Sources */,
 			);
