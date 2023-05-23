@@ -5,9 +5,13 @@
 //  Created by Jane Chao on 22/10/09.
 //
 
-struct Food: Equatable {
+import Foundation
+
+struct Food: Equatable, Identifiable {
+    let id = UUID()
     var name: String
     var image: String
+    
     @Suffix("大卡") var calorie: Double = .zero
     @Suffix("g") var carb: Double = .zero
     @Suffix("g") var fat: Double = .zero
