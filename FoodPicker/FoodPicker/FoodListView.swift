@@ -12,30 +12,45 @@ struct FoodListView: View {
     @Environment(\.dynamicTypeSize) var textSize
     @State private var food = Food.examples
     @State private var selectedFood = Set<Food.ID>()
+    @State private var shouldShowSheet: Bool = false
+    @State private var foodDetailHeight: CGFloat = FoodDetailSheetHeightKey.defaultValue
     
     var isEditing: Bool {editMode?.wrappedValue == .active}
     var body: some View {
         VStack (alignment: .leading) {
-            
             titleBar
             
             List($food, editActions: .all, selection: $selectedFood) {$food in
-                Text(food.name).padding(.vertical, 10)
+                HStack {
+                    Text(food.name).padding(.vertical, 10)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            if isEditing {return}
+                            shouldShowSheet = true
+                        }
+                    
+                    if isEditing {
+                        Image(systemName: "pencil")
+                            .font(.title2.bold())
+                            .foregroundColor(.accentColor)
+                    }
+                }
             }
             .listStyle(.plain)
             .padding(.horizontal)
         }
         .background(.groupBg)
         .safeAreaInset(edge: .bottom, content: buildFloatButton)
-        .sheet(isPresented: .constant(true)) {
-            let food = food[0]
-            let shouldVStack = textSize.isAccessibilitySize || food.image.count > 1
+        .sheet(isPresented: $shouldShowSheet) {
+            let food = food[4]
+            let shouldUseVStack = textSize.isAccessibilitySize || food.image.count > 1
             
-            AnyLayout.useVStack(if: shouldVStack, spacing: 30) {
+            AnyLayout.useVStack(if: shouldUseVStack, spacing: 30) {
                 Text(food.image)
                     .font(.system(size: 100))
                     .lineLimit(1)
-                    .minimumScaleFactor(0.5)
+                    .minimumScaleFactor(shouldUseVStack ? 1 : 0.5)
                 Grid(horizontalSpacing: 30, verticalSpacing: 12) {
                     buildNutritionView(title: "热量", value: food.$calorie)
                     buildNutritionView(title: "蛋白质", value: food.$protein)
@@ -44,7 +59,25 @@ struct FoodListView: View {
                 }
             }
             .padding()
-            .presentationDetents([.medium])
+            .overlay {
+                GeometryReader { proxy in
+                    Color.clear.preference(key: FoodDetailSheetHeightKey.self, value: proxy.size.height )
+                }
+            }
+            .onPreferenceChange(FoodDetailSheetHeightKey.self) {
+                foodDetailHeight = $0
+            }
+            .presentationDetents([.height(foodDetailHeight)])
+        }
+    }
+}
+
+private extension FoodListView {
+    struct FoodDetailSheetHeightKey: PreferenceKey {
+        static var defaultValue: CGFloat = 300
+        
+        static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+            value = nextValue()
         }
     }
 }
@@ -78,7 +111,7 @@ private extension FoodListView {
                 food = food.filter{ !selectedFood.contains($0.id)}
             }
         } label: {
-            Text("删除全部")
+            Text("删除已选项目")
                 .font(.title2.bold())
                 .frame(maxWidth: .infinity, alignment: .center)
         }.mainButtonStyle(shape: .roundedRectangle(radius: 6))
