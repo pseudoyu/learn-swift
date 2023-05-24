@@ -24,6 +24,8 @@
 		DDF75DD82A1DE9A30042DECB /* ShapeStyle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD72A1DE9A30042DECB /* ShapeStyle+.swift */; };
 		DDF75DDA2A1DE9BA0042DECB /* AnyTransition+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD92A1DE9BA0042DECB /* AnyTransition+.swift */; };
 		DDF75DDC2A1DE9D20042DECB /* AnyLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DDB2A1DE9D20042DECB /* AnyLayout+.swift */; };
+		DDF75DDE2A1E0E8F0042DECB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DDD2A1E0E8F0042DECB /* HomeScreen.swift */; };
+		DDF75DE02A1E39740042DECB /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DDF2A1E39740042DECB /* SettingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		DDF75DD72A1DE9A30042DECB /* ShapeStyle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+.swift"; sourceTree = "<group>"; };
 		DDF75DD92A1DE9BA0042DECB /* AnyTransition+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+.swift"; sourceTree = "<group>"; };
 		DDF75DDB2A1DE9D20042DECB /* AnyLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyLayout+.swift"; sourceTree = "<group>"; };
+		DDF75DDD2A1E0E8F0042DECB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DDF75DDF2A1E39740042DECB /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				DDF75DC92A1DCDFF0042DECB /* FoodList */,
 				DDF75DC82A1DCDF70042DECB /* FoodPicker */,
+				DDF75DDD2A1E0E8F0042DECB /* HomeScreen.swift */,
+				DDF75DDF2A1E39740042DECB /* SettingScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -248,10 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF75DE02A1E39740042DECB /* SettingScreen.swift in Sources */,
 				DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */,
 				DDF75DD62A1DE9560042DECB /* Animation+.swift in Sources */,
 				DDF75DCD2A1DCEF60042DECB /* FoodDetailSheet.swift in Sources */,
 				DDF75DD82A1DE9A30042DECB /* ShapeStyle+.swift in Sources */,
+				DDF75DDE2A1E0E8F0042DECB /* HomeScreen.swift in Sources */,
 				DDF75DC12A1D112A0042DECB /* FoodListScreen.swift in Sources */,
 				DDF75DD42A1DE9290042DECB /* View+.swift in Sources */,
 				DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */,
