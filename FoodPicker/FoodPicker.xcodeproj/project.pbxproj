@@ -7,30 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDF75DAB2A1AACBE0042DECB /* FoodPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DAA2A1AACBE0042DECB /* FoodPickerApp.swift */; };
-		DDF75DAD2A1AACBE0042DECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DAC2A1AACBE0042DECB /* ContentView.swift */; };
+		DDF75DAB2A1AACBE0042DECB /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DAA2A1AACBE0042DECB /* AppEntry.swift */; };
+		DDF75DAD2A1AACBE0042DECB /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DAC2A1AACBE0042DECB /* FoodPickerScreen.swift */; };
 		DDF75DAF2A1AACBF0042DECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF75DAE2A1AACBF0042DECB /* Assets.xcassets */; };
 		DDF75DB22A1AACBF0042DECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF75DB12A1AACBF0042DECB /* Preview Assets.xcassets */; };
 		DDF75DB92A1CB8510042DECB /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DB82A1CB8510042DECB /* Food.swift */; };
 		DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */; };
-		DDF75DBD2A1CF8640042DECB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBC2A1CF8640042DECB /* Extensions.swift */; };
 		DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */; };
-		DDF75DC12A1D112A0042DECB /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DC02A1D112A0042DECB /* FoodListView.swift */; };
+		DDF75DC12A1D112A0042DECB /* FoodListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DC02A1D112A0042DECB /* FoodListScreen.swift */; };
 		DDF75DC32A1D3A350042DECB /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DC22A1D3A350042DECB /* FoodForm.swift */; };
+		DDF75DCD2A1DCEF60042DECB /* FoodDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DCC2A1DCEF60042DECB /* FoodDetailSheet.swift */; };
+		DDF75DCF2A1DD22B0042DECB /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DCE2A1DD22B0042DECB /* Sheet.swift */; };
+		DDF75DD22A1DD4450042DECB /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD12A1DD4450042DECB /* SFSymbol.swift */; };
+		DDF75DD42A1DE9290042DECB /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD32A1DE9290042DECB /* View+.swift */; };
+		DDF75DD62A1DE9560042DECB /* Animation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD52A1DE9560042DECB /* Animation+.swift */; };
+		DDF75DD82A1DE9A30042DECB /* ShapeStyle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD72A1DE9A30042DECB /* ShapeStyle+.swift */; };
+		DDF75DDA2A1DE9BA0042DECB /* AnyTransition+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DD92A1DE9BA0042DECB /* AnyTransition+.swift */; };
+		DDF75DDC2A1DE9D20042DECB /* AnyLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF75DDB2A1DE9D20042DECB /* AnyLayout+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDF75DA72A1AACBE0042DECB /* FoodPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDF75DAA2A1AACBE0042DECB /* FoodPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerApp.swift; sourceTree = "<group>"; };
-		DDF75DAC2A1AACBE0042DECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDF75DAA2A1AACBE0042DECB /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		DDF75DAC2A1AACBE0042DECB /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
 		DDF75DAE2A1AACBF0042DECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF75DB12A1AACBF0042DECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDF75DB82A1CB8510042DECB /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
-		DDF75DBC2A1CF8640042DECB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
-		DDF75DC02A1D112A0042DECB /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		DDF75DC02A1D112A0042DECB /* FoodListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListScreen.swift; sourceTree = "<group>"; };
 		DDF75DC22A1D3A350042DECB /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
+		DDF75DCC2A1DCEF60042DECB /* FoodDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailSheet.swift; sourceTree = "<group>"; };
+		DDF75DCE2A1DD22B0042DECB /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		DDF75DD12A1DD4450042DECB /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
+		DDF75DD32A1DE9290042DECB /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		DDF75DD52A1DE9560042DECB /* Animation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+.swift"; sourceTree = "<group>"; };
+		DDF75DD72A1DE9A30042DECB /* ShapeStyle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+.swift"; sourceTree = "<group>"; };
+		DDF75DD92A1DE9BA0042DECB /* AnyTransition+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+.swift"; sourceTree = "<group>"; };
+		DDF75DDB2A1DE9D20042DECB /* AnyLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyLayout+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,16 +77,14 @@
 		DDF75DA92A1AACBE0042DECB /* FoodPicker */ = {
 			isa = PBXGroup;
 			children = (
-				DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */,
-				DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */,
-				DDF75DAA2A1AACBE0042DECB /* FoodPickerApp.swift */,
-				DDF75DAC2A1AACBE0042DECB /* ContentView.swift */,
-				DDF75DAE2A1AACBF0042DECB /* Assets.xcassets */,
+				DDF75DAA2A1AACBE0042DECB /* AppEntry.swift */,
+				DDF75DC42A1DCA5D0042DECB /* Screen */,
+				DDF75DC52A1DCD4B0042DECB /* Model */,
+				DDF75DC62A1DCD5A0042DECB /* Extension */,
+				DDF75DD02A1DD3E00042DECB /* Constant */,
+				DDF75DC72A1DCDB00042DECB /* Resource */,
+				DDF75DCB2A1DCE8D0042DECB /* Utils */,
 				DDF75DB02A1AACBF0042DECB /* Preview Content */,
-				DDF75DB82A1CB8510042DECB /* Food.swift */,
-				DDF75DBC2A1CF8640042DECB /* Extensions.swift */,
-				DDF75DC02A1D112A0042DECB /* FoodListView.swift */,
-				DDF75DC22A1D3A350042DECB /* FoodForm.swift */,
 			);
 			path = FoodPicker;
 			sourceTree = "<group>";
@@ -83,6 +95,87 @@
 				DDF75DB12A1AACBF0042DECB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDF75DC42A1DCA5D0042DECB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DC92A1DCDFF0042DECB /* FoodList */,
+				DDF75DC82A1DCDF70042DECB /* FoodPicker */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DDF75DC52A1DCD4B0042DECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DB82A1CB8510042DECB /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDF75DC62A1DCD5A0042DECB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DBA2A1CC2FA0042DECB /* PreviewDevice+.swift */,
+				DDF75DD32A1DE9290042DECB /* View+.swift */,
+				DDF75DD52A1DE9560042DECB /* Animation+.swift */,
+				DDF75DD72A1DE9A30042DECB /* ShapeStyle+.swift */,
+				DDF75DD92A1DE9BA0042DECB /* AnyTransition+.swift */,
+				DDF75DDB2A1DE9D20042DECB /* AnyLayout+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DDF75DC72A1DCDB00042DECB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DAE2A1AACBF0042DECB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DDF75DC82A1DCDF70042DECB /* FoodPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DAC2A1AACBE0042DECB /* FoodPickerScreen.swift */,
+			);
+			path = FoodPicker;
+			sourceTree = "<group>";
+		};
+		DDF75DC92A1DCDFF0042DECB /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DCA2A1DCE350042DECB /* View */,
+				DDF75DC02A1D112A0042DECB /* FoodListScreen.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		DDF75DCA2A1DCE350042DECB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DC22A1D3A350042DECB /* FoodForm.swift */,
+				DDF75DCC2A1DCEF60042DECB /* FoodDetailSheet.swift */,
+				DDF75DCE2A1DD22B0042DECB /* Sheet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDF75DCB2A1DCE8D0042DECB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DBE2A1CFBD50042DECB /* SuffixWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DDF75DD02A1DD3E00042DECB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DDF75DD12A1DD4450042DECB /* SFSymbol.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,13 +249,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDF75DBF2A1CFBD50042DECB /* SuffixWrapper.swift in Sources */,
-				DDF75DBD2A1CF8640042DECB /* Extensions.swift in Sources */,
-				DDF75DC12A1D112A0042DECB /* FoodListView.swift in Sources */,
+				DDF75DD62A1DE9560042DECB /* Animation+.swift in Sources */,
+				DDF75DCD2A1DCEF60042DECB /* FoodDetailSheet.swift in Sources */,
+				DDF75DD82A1DE9A30042DECB /* ShapeStyle+.swift in Sources */,
+				DDF75DC12A1D112A0042DECB /* FoodListScreen.swift in Sources */,
+				DDF75DD42A1DE9290042DECB /* View+.swift in Sources */,
 				DDF75DBB2A1CC2FA0042DECB /* PreviewDevice+.swift in Sources */,
-				DDF75DAD2A1AACBE0042DECB /* ContentView.swift in Sources */,
+				DDF75DCF2A1DD22B0042DECB /* Sheet.swift in Sources */,
+				DDF75DAD2A1AACBE0042DECB /* FoodPickerScreen.swift in Sources */,
 				DDF75DC32A1D3A350042DECB /* FoodForm.swift in Sources */,
-				DDF75DAB2A1AACBE0042DECB /* FoodPickerApp.swift in Sources */,
+				DDF75DAB2A1AACBE0042DECB /* AppEntry.swift in Sources */,
+				DDF75DDC2A1DE9D20042DECB /* AnyLayout+.swift in Sources */,
 				DDF75DB92A1CB8510042DECB /* Food.swift in Sources */,
+				DDF75DDA2A1DE9BA0042DECB /* AnyTransition+.swift in Sources */,
+				DDF75DD22A1DD4450042DECB /* SFSymbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

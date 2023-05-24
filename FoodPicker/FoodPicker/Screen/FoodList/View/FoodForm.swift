@@ -21,7 +21,7 @@ private extension TextField where Label == Text {
     }
 }
 
-extension FoodListView {
+extension FoodListScreen {
     struct FoodForm: View {
         @Environment(\.dismiss) var dismiss
         @FocusState private var field: MyField?
@@ -48,12 +48,12 @@ extension FoodListView {
             NavigationStack {
                 VStack {
                     HStack {
-                        Label("编辑食物资讯", systemImage: "pencil")
+                        Label("编辑食物资讯", systemImage: .pencil)
                             .font(.title.bold())
                             .foregroundColor(.accentColor)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .push(to: .leading)
                         
-                        Image(systemName: "xmark.circle.fill")
+                        SFSymbol.xmark
                             .font(.largeTitle.bold())
                             .foregroundColor(.secondary)
                             .onTapGesture {
@@ -90,7 +90,7 @@ extension FoodListView {
                     } label: {
                         Text(invalidMessage ??  "储存")
                             .bold()
-                            .frame(maxWidth: .infinity)
+                            .maxWidth()
                     }
                     .mainButtonStyle()
                     .padding()
@@ -100,17 +100,7 @@ extension FoodListView {
                 .multilineTextAlignment(.trailing)
                 .font(.title3)
                 .scrollDismissesKeyboard(.interactively)
-                .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Spacer()
-                        Button(action: goPreviousField) {
-                            Image(systemName: "chevron.up")
-                        }
-                        Button(action: goNextField) {
-                            Image(systemName: "chevron.down")
-                        }
-                    }
-            }
+                .toolbar(content: buildKeyboardTools)
             }
         }
         
@@ -134,11 +124,23 @@ extension FoodListView {
                 }
             }
         }
+        
+        func buildKeyboardTools() -> some ToolbarContent {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button(action: goPreviousField) {
+                    SFSymbol.chevronUp
+                }
+                Button(action: goNextField) {
+                    SFSymbol.chevronDown
+                }
+            }
+        }
     }
 }
 
 struct FoodForm_Previews: PreviewProvider {
     static var previews: some View {
-        FoodListView.FoodForm(food: Food.examples.first!) { _ in}
+        FoodListScreen.FoodForm(food: Food.examples.first!) { _ in}
     }
 }

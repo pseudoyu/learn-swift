@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FoodPickerScreen: View {
     
     @State private var selectedFood: Food?
     @State private var shouldShowInfo: Bool = false
@@ -33,7 +33,8 @@ struct ContentView: View {
             }
             .font(.title)
             .padding()
-            .frame(maxWidth: .infinity, minHeight: UIScreen.main.bounds.height - 100)
+            .maxWidth()
+            .frame(minHeight: UIScreen.main.bounds.height - 100)
             .mainButtonStyle()
             .animation(.mySpring, value: shouldShowInfo)
             .animation(.myEase, value: selectedFood)
@@ -41,7 +42,7 @@ struct ContentView: View {
     }
 }
 
-private extension ContentView {
+private extension FoodPickerScreen {
     var foodImage: some View {
         Group {
             if let selectedFood {
@@ -70,7 +71,7 @@ private extension ContentView {
             Button {
                 shouldShowInfo.toggle()
             } label : {
-                Image(systemName: "info.circle.fill").foregroundColor(.secondary)
+                SFSymbol.info.foregroundColor(.secondary)
             }.buttonStyle(.plain)
         }
     }
@@ -136,16 +137,16 @@ private extension ContentView {
     }
 }
 
-extension ContentView {
+extension FoodPickerScreen {
     init(selectedFood: Food) {
         _selectedFood = State(wrappedValue: selectedFood)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FoodPickerScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(selectedFood: .examples.first!)
-        ContentView(selectedFood: .examples.first!).previewDevice(.iPad)
-        ContentView(selectedFood: .examples.first!).previewDevice(.iPhoneSE)
+        FoodPickerScreen(selectedFood: .examples.first!)
+        FoodPickerScreen(selectedFood: .examples.first!).previewDevice(.iPad)
+        FoodPickerScreen(selectedFood: .examples.first!).previewDevice(.iPhoneSE)
     }
 }
